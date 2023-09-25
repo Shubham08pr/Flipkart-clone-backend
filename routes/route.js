@@ -9,6 +9,7 @@ import {
 const router = express.Router();
 
 router.get("/", (req, res) => {
+  console.log("api in good health");
   res.json({ status: "Server is running" });
 });
 
