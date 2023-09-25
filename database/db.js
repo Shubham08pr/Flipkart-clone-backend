@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 export const Connection = async (username, password) => {
   // const URL =
   //   process.env.MONGODB_URI ||
-  //   `mongodb+srv://${username}:${password}@ecommerce-web.fxtnwqk.mongodb.net/?retryWrites=true&w=majority`;
+  //   `mongodb+srv://${username}:${password}ecommerce-web.fxtnwqk.mongodb.net/?retryWrites=true&w=majority`;
 
   const URL = `mongodb+srv://${username}:${password}@ecommerce-web.fxtnwqk.mongodb.net/?retryWrites=true&w=majority`;
   try {
