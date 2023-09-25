@@ -8,6 +8,10 @@ import {
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+  res.json({ status: "Server is running" });
+});
+
 router.post("/signup", userSignup);
 router.post("/login", userLogin);
 
