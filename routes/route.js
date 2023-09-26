@@ -8,9 +8,9 @@ import {
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
+router.get("/healthz", (req, res) => {
   console.log("api in good health");
-  res.json({ status: "Server is running" });
+  res.json({ status: "200" });
 });
 
 router.post("/signup", userSignup);
